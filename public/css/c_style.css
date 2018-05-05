@@ -1,0 +1,50 @@
+.c_nav_margin {
+    margin-left: 50vh;
+    overflow: hidden;
+}
+
+.bg-cust {
+    background-color: #5E6F81;
+    padding-left: 33%;
+}
+
+.cdiv {
+    height: 15vh;
+}
+
+.left_nav_cont {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.c_img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.c_user {
+    margin-top: 5%;
+    margin-left: 10px;
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    margin-right: 4px;
+    background-color: #00FF0D;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.c_cont_body {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.c_foot {
+    padding: 4px;
+}
+
+footer {}
