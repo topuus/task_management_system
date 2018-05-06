@@ -1,6 +1,6 @@
 <body>
     <div class="container-fluid left_nav">
-        <div class="col-sm-3 jumbotron left_nav_cont">
+        <div class="jumbotron left_nav_cont">
             <div class="left">
                 <ul class="list-group">
                     <li class="list-group-item d-flex align-items-center cdiv">

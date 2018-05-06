@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('partials.login');
 });
+
+Route::get('/register','PageController@register');
+Route::get('/login','PageController@login');
+
+
