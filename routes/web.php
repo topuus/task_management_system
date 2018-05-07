@@ -12,10 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('partials.login');
+    return view('layouts.app');
 });
 
 Route::get('/register','PageController@register');
 Route::get('/login','PageController@login');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

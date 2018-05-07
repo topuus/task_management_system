@@ -14,5 +14,9 @@ class PageController extends Controller
     	return view('partials.register');
     }
 
+    public function home(){
+    	return view('home');
+    }
+
 
 }

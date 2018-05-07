@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('public/css/fontawesome.min.css')}}">
         <!-- Custom styles for this template -->
     <link href="public/css/c_style.css" rel="stylesheet">
+    
 
     
 </head>
