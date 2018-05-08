@@ -6,8 +6,15 @@
                     <li class="list-group-item d-flex align-items-center cdiv">
                         <img src="resources/assets/img/prof_b.png" class="c_img" alt=".....">
                         <div class="flex-column c_user align-items-center">
-                            <a href="" class="text-info">Tofael Ahmed</a>
-                            <p><span class="dot"></span>Status</p>
+                            <a href="" class="text-info">{{ Auth::user()->name }}</a>
+                            <p><span class="dot"></span>
+                                @if (session('status'))
+                                    <div class="alert alert-success">
+                                        {{ session('status') }}
+                                    </div>
+                                @endif
+                                online
+                            </p>
                         </div>
                     </li>
                     <li class="list-group-item d-flex justify-content-between bg-cust">
@@ -15,7 +22,7 @@
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="" class="list-group-item list-group-item-action"> Dashboard
+                        <a href="{{ url('task') }}" class="list-group-item list-group-item-action"> Dashboard
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
 

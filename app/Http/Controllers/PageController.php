@@ -6,17 +6,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function login(){
-    	return view('partials.login');
-    }
-
-    public function register(){
-    	return view('partials.register');
-    }
-
-    public function home(){
-    	return view('home');
-    }
-
-
+	public function tasks(){
+		return view('partials.navPages.tasks');
+	}
 }

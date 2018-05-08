@@ -48,6 +48,7 @@
 
 .c_cont_body {
     min-height: 100vh;
+    min-width: 1015px;
     padding: 30px;
     float:left;
 }
@@ -60,4 +61,8 @@
     text-decoration: none;
 }
 
-.nounderline:hover 
+.dropdown_custmargin {
+    margin-top: 4px;
+    right: 0;
+    left: auto;
+}
