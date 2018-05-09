@@ -1,7 +1,8 @@
+</div>
 <!--footer-->
 <footer class="footer">
     <div class="card text-white bg-dark c_foot text-center">
-        Components and options for laying out your Bootstrap project, including wrapping containers, a powerful.
+        &copy Copyright By Humen
     </div>
 </footer>
 </div>

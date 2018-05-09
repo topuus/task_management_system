@@ -22,37 +22,37 @@
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="{{ url('task') }}" class="list-group-item list-group-item-action"> Dashboard
+                        <a href="{{ url('dashboard') }}" class="list-group-item list-group-item-action"> Dashboard
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
 
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="" class="list-group-item list-group-item-action">Tasks
+                        <a href="{{ url('tasks') }}" class="list-group-item list-group-item-action">Tasks
                                         <span class="badge badge-primary badge-pill float-right">14</span></a>
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="" class="list-group-item list-group-item-action">My Tasks
+                        <a href="{{ url('mytasks') }}" class="list-group-item list-group-item-action">My Tasks
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="" class="list-group-item list-group-item-action">Clients
+                        <a href="{{ url('clients') }}" class="list-group-item list-group-item-action">Clients
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="" class="list-group-item list-group-item-action">Projects
+                        <a href="{{ url('projects') }}" class="list-group-item list-group-item-action">Projects
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="" class="list-group-item list-group-item-action">Priority
+                        <a href="{{ url('priority') }}" class="list-group-item list-group-item-action">Priority
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
                     </li>
