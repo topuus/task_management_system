@@ -4,9 +4,9 @@
             <div class="left">
                 <ul class="list-group">
                     <li class="list-group-item d-flex align-items-center cdiv">
-                        <img src="resources/assets/img/prof_b.png" class="c_img" alt=".....">
+                        <img src="resources/assets/img/{{ Auth::user()->avatar }}" class="c_img" alt=".....">
                         <div class="flex-column c_user align-items-center">
-                            <a href="" class="text-info">{{ Auth::user()->name }}</a>
+                            <a href="{{url('/profile')}}" class="text-info">{{ Auth::user()->name }}</a>
                             <p><span class="dot"></span>
                                 @if (session('status'))
                                     <div class="alert alert-success">
@@ -22,7 +22,7 @@
                     </li>
 
                     <li class="list-item d-flex align-items-center">
-                        <a href="{{ url('dashboard') }}" class="list-group-item list-group-item-action"> Dashboard
+                        <a href="{{ url('dashboard') }}" class="list-group-item list-group-item-action" id="navbarColor01"> Dashboard
                                         <span class="badge badge-primary badge-pill float-right">14</span>
                                     </a>
 
@@ -62,3 +62,5 @@
             </div>
         </div>
     </div>
+
+    

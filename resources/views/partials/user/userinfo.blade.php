@@ -4,33 +4,23 @@
 @include('partials.nav',['page_title'=>'Profile'])
 @include('partials.content')
 
-
 <div class="container">
     <div class="row">
-        <div class="col">
-            <h3 class="card-header">Mr. {{ Auth::user()->name }}</h3>
-            <img style="height: 450px; width: 450px; " src="resources/assets/img/prof_b.png" class="img-responsive mx-auto" alt=".....">
-        </div>
+        <div class="col-md-10 col-md-offset-1">
+            <img src="resources/assets/img/{{$user->avatar}}" style="width: 150px; height: 150px; float: left; margin-right:25px; border-radius:50%;">
+            <br>
+            <h2>MD {{$user->name}}'s Profile</h2>
 
-        <div class="col">
-        	<h3 class="card-header">Informations</h3>
-            <div class="card mb-3">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        ID: {{ Auth::user()->id }}
-                    </li>
-                    <li class="list-group-item">
-                        Name: {{ Auth::user()->name }}
-                    </li>
-                    <li class="list-group-item">
-                        Email: {{ Auth::user()->email }}
-                    </li>
-                </ul>
-            </div>
-        </div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item bg-transparent p-0"> ID: {{ Auth::user()->id }} <hr class="m-0"></li>
+  <li class="list-group-item bg-transparent p-0 mt-2"> Name: {{ Auth::user()->name }}</li>
+  <li class="list-group-item bg-transparent p-0"> Email: {{ Auth::user()->email }}</li>
+</ul>
 
+        </div>
     </div>
 </div>
+
 
 
 @include('partials.footer')

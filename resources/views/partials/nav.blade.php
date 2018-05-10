@@ -16,8 +16,8 @@
 
                             </a>
                             <div class="dropdown-menu dropdown_custmargin">
-                                <a class="dropdown-item" href="{{url('/profile')}}">Profile</a>
-                                <a class="dropdown-item" href="{{url('/setting')}}">Setting</a>
+                                <a class="dropdown-item" href="">Notification 1</a>
+                                <a class="dropdown-item" href="">Notification 2</a>
                             </div>
                         </li>
                     </ul>
@@ -25,25 +25,22 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <li class="d-flex align-items-center">
-                        <img src="resources/assets/img/prof_b.png" class="c_img_nav" alt=".....">
-                        <a href="" class="text-white nounderline">{{ Auth::user()->name }}</a>
-
                         <div class="panel-body">
                             <ul class="nav nav-pills">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-cogs"></i>
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="resources/assets/img/{{ Auth::user()->avatar }}" class="c_img_nav" alt=".....">
+                                            {{ Auth::user()->name }}
+                                            <i class="fa fa-cogs"></i>
 
                                     </a>
                                     <div class="dropdown-menu dropdown_custmargin">
-                                        <a class="dropdown-item" href="{{url('/profile')}}">Profile</a>
-                                        <a class="dropdown-item" href="{{url('/setting')}}">Setting</a>
+                                        <a class="dropdown-item float" href="{{url('/profile')}}"><i class="fa fa-user mr-3"></i>Profile</a>
+                                        <a class="dropdown-item" href="{{url('/setting')}}"><i class="fa fa-cog mr-3"></i>Setting</a>
 
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
-                                                    Logout
+                                                    <i class="fa fa-sign-out mr-3"></i> Logout                                               
                                                 </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

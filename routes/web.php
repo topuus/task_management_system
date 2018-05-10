@@ -27,4 +27,7 @@ Route::get('/clients','PageController@clients');
 Route::get('/priority','PageController@priority');
 
 Route::get('/profile','PageController@profile');
+Route::post('/profile_up','PageController@update_avatar');
+
+
 Route::get('/setting','PageController@setting');

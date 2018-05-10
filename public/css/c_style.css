@@ -47,7 +47,7 @@
 }
 
 .c_cont_body {
-    min-height: 100vh;
+    min-height: 88vh;
     min-width: 1015px;
     padding: 30px;
     float:left;
@@ -68,3 +68,6 @@
 }
 
 
+.user_info_style {
+
+}

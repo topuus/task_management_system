@@ -25,6 +25,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('designation') ? ' has-error' : '' }}">
+                            <label for="designation" class="col-md-4 control-label">Designation</label>
+
+                            <div class="col-md-6">
+                                <input id="designation" type="text" class="form-control" name="designation" value="{{ old('designation') }}" required autofocus>
+
+                                @if ($errors->has('designation'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('designation') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
